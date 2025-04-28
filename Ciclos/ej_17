@@ -1,0 +1,11 @@
+suma_sueldos = 0
+cant_sueldos = int(input("Ingrese la cantidad de sueldos a promediar: "))
+# Validar que la cantidad de sueldos sea mayor a 0
+
+for i in range(cant_sueldos):
+    sueldo = float(input(f"Ingresá el sueldo del empleado {i + 1}: "))
+    suma_sueldos += sueldo
+
+promedio = suma_sueldos / cant_sueldos
+# Mostrar el resultado
+print(f"El promedio de los sueldos ingresados es: {promedio}")

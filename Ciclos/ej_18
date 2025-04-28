@@ -1,0 +1,20 @@
+#FOR
+for i in range(5):
+    num = int(input(f"Ingresá un número positivo ({i + 1}/5): "))
+    if num <= 0:
+        print("Número invalido. Se interrumpe el programa.")
+        break
+    print(f"Número ingresado: {num}")
+#WHILE
+contador = 0
+sigue_ingresando = True  # inicializo para entrar al while
+
+while contador < 5 and sigue_ingresando:
+    num = int(input(f"Ingresá un número positivo ({contador + 1}/5): "))
+    if num > 0:
+        print(f"Número ingresado: {num}")
+        contador += 1
+    else:
+        sigue_ingresando = False
+        # contador += 1  # No se incrementa el contador si el número es inválido
+        print("WHILE Número incorrecto ingresado. Se interrumpe el programa.")

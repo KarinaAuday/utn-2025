@@ -1,0 +1,13 @@
+inicio = int(input("Ingresá el primer número (inicio): "))
+fin = int(input("Ingresá el segundo número (fin): "))
+
+if inicio > fin:
+    print("Error: el primer número debe ser menor o igual al segundo.")
+else:
+    print("Secuencia con extremos incluidos:")
+    for i in range(inicio, fin + 1):
+        print(i, end=" ")
+    
+    print("\nSecuencia con extremos excluidos:")
+    for i in range(inicio + 1, fin):
+        print(i, end=" ")

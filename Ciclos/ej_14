@@ -1,0 +1,7 @@
+filas = 4
+columnas = 5
+# Imprimir un rectángulo de asteriscos con 4 filas y 5 columnas
+for fila in range(filas):  # 4 filas
+    for columna in range(columnas):  # 5 columnas
+        print("*", end="")  # sin salto de línea
+    print()  # salto de línea al terminar una fila

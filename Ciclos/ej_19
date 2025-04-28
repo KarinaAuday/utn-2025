@@ -1,0 +1,7 @@
+edad = int(input("Ingresá tu edad (entre 1 y 100): "))
+
+while edad < 1 or edad > 100:
+    print("Edad inválida. Debe estar entre 1 y 100.")
+    edad = int(input("Ingresá tu edad nuevamente: "))
+
+print(f"Edad aceptada: {edad}")

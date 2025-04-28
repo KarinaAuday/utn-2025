@@ -1,0 +1,14 @@
+n = int(input("Ingresá un número entero positivo: "))
+
+print("Números impares hasta", n)
+for i in range(1, n + 1):
+    if i % 2 != 0:
+        print(i)
+n = int(input("Ingresá un número entero positivo: "))
+
+print("Números impares hasta", n)
+for i in range(1, n + 1):
+    if i % 2 == 0:
+        continue  # salteamos los pares
+    print(i)
+print("Fin del programa")
