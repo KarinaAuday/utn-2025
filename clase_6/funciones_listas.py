@@ -84,7 +84,12 @@ def calcular_maximo (lista)->int:
     EJEMPLOS DE MALAS y BUENAS PRACTICAS PARA BUSCAR EN UNA LSITA"
     
     """
-#LO QUE NOOOOOOOOOO HAY QUE HACER  ---> FOR CON BREAK
+#LO QUE NOOOOOOOOOO HAY QUE HACER EN PROGRAMACION 1  ---> BUSCA AUTOMATICAMENTE
+
+def buscar_numero_NO_LO_USAMOS(lista , valor)->bool:
+    return valor in lista
+
+#LO QUE NOOOOOOOOOO HAY QUE HACER  ---> FOR QUE HACE UN BREAK
 def buscar_texto_mal1 (lista , texto)->bool: 
     encontrado = False
     for i in range(len(lista)):
@@ -99,7 +104,7 @@ def buscar_texto_mal2 (lista , texto)->bool:
            return True   
     return False  
 
-#LO QUE NOOOOOOOOOO HAY QUE HACER  ---> FOR QUE NO TERMINA CUANDO ENCUENTRA
+#LO QUE NOOOOOOOOOO HAY QUE HACER  ---> FOR QUE NO TERMINA CUANDO 
 def buscar_texto_mal3 (lista , texto)->bool: 
     encontrado = False
     for i in range(len(lista)):
@@ -163,13 +168,14 @@ def interseccion (lista1 , lista2)->list:
         longitud_menor = len(lista1)
     else:
         longitud_menor = len(lista2)
-        
+    cont = 0    
     lista_interseccion = [None] * longitud_menor  #Uso append que agrega una posicion
     for i in range(len(lista1)):
         numero_buscar = lista1[i]  # Asigna el elemento de la lista1 a buscar
         pos = buscar_numero(lista2 , numero_buscar)  # Busca el número en la segunda lista
         if pos != -1:
-           lista_interseccion[i] = numero_buscar     
+           lista_interseccion[cont] = numero_buscar     
+           cont += 1
     return lista_interseccion  # Retorna la lista de intersección
 
 def buscar_numero ( lista , numero)->int:

@@ -84,7 +84,12 @@ def calcular_maximo (lista)->int:
     EJEMPLOS DE MALAS y BUENAS PRACTICAS PARA BUSCAR EN UNA LSITA"
     
     """
-#LO QUE NOOOOOOOOOO HAY QUE HACER  ---> FOR CON BREAK
+#LO QUE NOOOOOOOOOO HAY QUE HACER EN PROGRAMACION 1  ---> BUSCA AUTOMATICAMENTE
+
+def buscar_numero_NO_LO_USAMOS(lista , valor)->bool:
+    return valor in lista
+
+#LO QUE NOOOOOOOOOO HAY QUE HACER  ---> FOR QUE HACE UN BREAK
 def buscar_texto_mal1 (lista , texto)->bool: 
     encontrado = False
     for i in range(len(lista)):
@@ -99,7 +104,7 @@ def buscar_texto_mal2 (lista , texto)->bool:
            return True   
     return False  
 
-#LO QUE NOOOOOOOOOO HAY QUE HACER  ---> FOR QUE NO TERMINA CUANDO ENCUENTRA
+#LO QUE NOOOOOOOOOO HAY QUE HACER  ---> FOR QUE NO TERMINA CUANDO 
 def buscar_texto_mal3 (lista , texto)->bool: 
     encontrado = False
     for i in range(len(lista)):
