@@ -1,6 +1,6 @@
 from funciones_listas import *  # Importa todas las funciones del módulo funciones_listas
 lista_nombres = ["pepe", "maria", "juan", "luis" , "Ana"]  # Inicializa una lista con valores
-lista_edades = [20, 30, 40, 50, 60]  # Inicializa una lista con valores
+lista_edades = [20, 30, 30, 50, 60]  # Inicializa una lista con valores
 for i in range(len(lista_nombres)):
     print(f"Nombre: {lista_nombres[i]}, su edad es: {lista_edades[i]}") 
     

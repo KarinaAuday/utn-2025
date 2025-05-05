@@ -1,12 +1,13 @@
 from funciones_listas import *
 
-
+#---interseccion
 lista_interseccion = interseccion([1, 2, 3, 4,6], [3, 4, 5, 6])  # Encuentra la intersección entre dos listas
 print ("Lista Interseccion")
 for i in range(len(lista_interseccion)):
-    print(f"Elemento {i}: {lista_interseccion[i]}")  # Imprime el elemento en la posición i
+    if lista_interseccion[i] != None:
+       print(f"Elemento {i}: {lista_interseccion[i]}")  # Imprime el elemento en la posición i
     
-    
+ #-------busqueda   
 lista = ["pepe", "maria", "juan", "luis" , "pepe"]  # Inicializa una lista con valores
 encontro = buscar_texto(lista, "Kari" )  # Busca el texto en la lista
 print(encontro)  # Imprime si se encontró el texto
@@ -14,7 +15,9 @@ print(encontro)  # Imprime si se encontró el texto
 cant_remplazos = remplazar_nombres(lista, "pepe", "Kari")  # Reemplaza el nombre en la lista
 print(f"Se reemplazaron {cant_remplazos} nombres")  # Imprime la cantidad de nombres reemplazados
 for i in range(len(lista)):
-    print(f"Elemento {i}: {lista[i]}")  # Imprime el elemento en la posición i
+    if lista[i] != None:
+        print(f"Elemento {i}: {lista[i]}")
+   
     
 
 #mi_lista = [40, 50, 60, 150, 80]  # Inicializa una lista con valores

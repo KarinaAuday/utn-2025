@@ -159,13 +159,17 @@ def interseccion (lista1 , lista2)->list:
     """
     Esta función encuentra la intersección entre dos listas.
     """
-    lista_interseccion = []  #Uso append que agrega una posicion
+    if len(lista1) <= len(lista2):
+        longitud_menor = len(lista1)
+    else:
+        longitud_menor = len(lista2)
+        
+    lista_interseccion = [None] * longitud_menor  #Uso append que agrega una posicion
     for i in range(len(lista1)):
         numero_buscar = lista1[i]  # Asigna el elemento de la lista1 a buscar
         pos = buscar_numero(lista2 , numero_buscar)  # Busca el número en la segunda lista
         if pos != -1:
-            lista_interseccion.append(lista1[i])
-       
+           lista_interseccion[i] = numero_buscar     
     return lista_interseccion  # Retorna la lista de intersección
 
 def buscar_numero ( lista , numero)->int:
