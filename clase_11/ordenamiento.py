@@ -16,7 +16,7 @@ def burbuja_mejorado(lista:list) -> list:
             if lista[j] > lista[j + 1]:
                 lista[j], lista[j + 1] = lista[j + 1], lista[j]
                 intercambiado = True
-        i += i
+        i += 1
     return lista
 
 def seleccion(lista:list) -> list:

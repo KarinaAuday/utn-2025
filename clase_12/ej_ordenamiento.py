@@ -86,4 +86,4 @@ v1 = [3, 8, 55]
 v2 = [22, 44, 111]
 resultado = intercalar_vectores(v1, v2 , True)
 print("Resultado de la intercalación:")
-mostrar_lista_salteando_valor(resultado )           
+mostrar_lista_salteando_valor(resultado )
