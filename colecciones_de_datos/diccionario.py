@@ -1,0 +1,5 @@
+diccionario = dict([("nombre", "Pedro"), ("edad", "75"), ("dni", "5454545")])
+print (type(diccionario))
+print(diccionario)
+print(diccionario['nombre'])
+print(diccionario["dni"])
