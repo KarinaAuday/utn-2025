@@ -34,3 +34,4 @@ numeros.sort(reverse=False)
 print(numeros)
 del numeros[0]
 print("Lista de números después de eliminar el primer elemento:", numeros)
+
