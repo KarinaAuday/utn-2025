@@ -179,9 +179,7 @@ def interseccion (lista1 , lista2)->list:
     return lista_interseccion  # Retorna la lista de intersección
 
 def buscar_numero ( lista , numero)->int:
-    """
-    Esta función busca un número en una lista y devuelve la posición donde se encontró.
-    """
+   
     encontrado = False
     i = 0
     pos_encontrado = -1
@@ -190,4 +188,4 @@ def buscar_numero ( lista , numero)->int:
             pos_encontrado = i
             encontrado = True  
         i += 1  
-    return pos_encontrado  #Devuelve la posicion donde encontro el texto
+    return pos_encontrado 
