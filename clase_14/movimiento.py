@@ -1,6 +1,6 @@
 import pygame
 
-RUTA_IMAGEN = "utn-2025/mario.png"
+RUTA_IMAGEN = "mario.png"
 ANCHO_PANTALLA = 800
 ALTO_PANTALLA = 600
 AZUL = (0,0,255)
